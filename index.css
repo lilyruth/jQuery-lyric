@@ -39,6 +39,10 @@ select {
  font-size: 1rem;
 }
 
+a, {
+ color:  rgba(52, 7, 86, .9);
+}
+
 .youtube-container {
  padding-top: 7rem;
  text-align: center;
