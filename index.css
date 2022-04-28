@@ -1,0 +1,171 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Geneva, Tahoma, sans-serif;
+}
+
+:root {
+ --background:rgb(240, 246, 250);
+}
+ 
+h1 {
+ padding-left: 1rem;
+}
+
+.menu {
+ background: rgba(52, 7, 86, .9);
+ color: white;
+ padding: .5rem;
+ margin-bottom: 1rem;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+ box-shadow: 2px 2px 1px rgb(164, 162, 162);
+ z-index: 10;
+}
+
+.input {
+ margin: 1rem;
+ padding-right: 1rem;
+}
+
+select {
+ background: var(--background);
+ font-size: 1rem;
+}
+
+.youtube-container {
+ padding-top: 7rem;
+ text-align: center;
+ background: var(--background);
+ padding-bottom: 2rem;
+}
+
+iframe {
+ width: 30rem;
+ height: 17rem;
+ border-radius: 25px;
+ box-shadow: 2px 2px 1px rgb(164, 162, 162);
+}
+.title {
+ background: var(--background);
+ padding: 2rem 0;
+}
+
+.loading, .loader, .waiting {
+ margin-top: 4rem;
+}
+
+.lyrics-container {
+ text-align: center;
+}
+
+.lyrics-text {
+ columns: 2;
+ padding: 2rem;
+ font-size: 1rem;
+}
+
+.butter, .permission, .magic, .life, .dynamite, .stay, .dionysus, .idol, .wings, .youreyes, .film, .spring  {
+ position: relative;
+}
+.butter::before, .permission::before, .magic::before, .life::before, .dynamite::before, .stay::before, .dionysus::before, .idol::before, .wings::before, .youreyes::before, .film::before, .spring::before {
+ content: "";
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ bottom: 0px;
+ left: 0px;
+ opacity: .2;
+}
+
+.butter::before {
+ background: center/cover url('./images/butter.jpg');
+}
+
+.permission::before {
+ background: center/cover url('./images/permission.jpg');
+} 
+
+.magic::before {
+ background: center/cover url('./images/magicshop.jpg');
+} 
+
+.life::before {
+ background: center/cover url('./images/life.jpg');
+} 
+
+.dynamite::before {
+ background: center/cover url('./images/dynamite.jpg');
+} 
+
+.stay::before {
+ background: center/cover url('./images/staygold.jpg');
+} 
+
+.dionysus::before {
+ background: center/cover url('./images/dionysus.jpg');
+} 
+
+.idol::before {
+ background: center/cover url('./images/idol.jpg');
+}
+
+.wings::before {
+ background: center/cover url('./images/wings.jpg');
+} 
+
+.youreyes::before {
+ background: center/cover url('./images/youreyestell.jpg');
+} 
+
+.film::before {
+ background: center/cover url('./images/filmout.jpg');
+} 
+
+.spring::before {
+ background: center/cover url('./images/spring_day.jpg');
+}
+
+@media screen and (max-width: 650px) {
+ 
+ h1 {
+  padding: 0;
+ }
+ .menu {
+  display: block;
+  text-align: center;
+ }
+ .input {
+  padding: 0;
+ }
+ selection {
+  margin: 0 auto;
+ }
+ .youtube-container {
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+ }
+
+ iframe {
+  margin: 0 auto;
+  width: 16.5rem;
+  height: 9.35rem;
+ }
+
+ .lyrics-text {
+  columns: 1;
+ }
+}

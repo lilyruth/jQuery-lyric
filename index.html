@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+ <script type="module" src="index.js" defer></script>
+ <link rel="stylesheet" href="index.css">
+ <title>BTS Lyrics Project</title>
+
+ <!-- Photos for lyric backgrounds are copyright HYBE and BTS -->
+
+</head>
+
+<body>
+
+ <div class="page-container">
+  <div class="menu">
+   <h1>BTS lyrics</h1>
+
+   <div class="input">
+    <label for="song">Choose a song: </label>
+    <select name="song" id="song">
+     <option value="">Select any song</option>
+     <option value="permission to dance">Permission to Dance</option>
+     <option value="magic shop">Magic Shop</option>
+     <option value="butter">Butter</option>
+     <option value="dynamite">Dynamite</option>
+     <option value="life goes on">Life Goes On</option>
+     <option value="stay gold">Stay Gold</option>
+     <option value="dionysus">Dionysus</option>
+     <option value="idol">Idol</option>
+     <option value="outro: wings">Outro: Wings</option>
+     <option value="your eyes tell">Your Eyes Tell</option>
+     <option value="film out">Film Out</option>
+    </select>
+   </div>
+  </div>
+  
+  <div class="youtube-container" id="youtube-container">
+
+  </div>
+  <div class="lyrics-container">
+   <h2 id="title" class="title"></h2>
+   <h2 id="translation-link"></h2>
+   <div class="lyrics" id="lyrics">
+  
+    <h3 id="loading" class="loading">Waiting for your selection!</h3>
+   </div>
+  </div>
+ </div>
+
+
+</body>
+
+</html>
